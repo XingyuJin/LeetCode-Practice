@@ -11,6 +11,7 @@ Rumtime: 92 ms	Memory: 14.6 MB
 
 def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
     end = m + n - 1
+    m, n = m - 1, n - 1
     while m >= 0 and n >= 0:
         if nums2[n] >= nums1[m]:
             nums1[end] = nums2[n]
